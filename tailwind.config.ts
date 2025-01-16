@@ -11,7 +11,8 @@ export default {
                 "off-white": "#fff6e3",
             },
             fontFamily: {
-                serif: ["Inter", "serif"]
+                serif: ["Inter", "serif"],
+                sans: ["Biggest Country", "sans"]
             },
         }
     },
