@@ -2,7 +2,7 @@
     import Pfas from "components/PFAS.svelte";
 </script>
 
-<div class="flex justify-center items-center w-full h-full">
+<div class="flex justify-center items-center w-full h-full bg-off-white">
     <svg width="1483" height="899" viewBox="0 0 1483 899" fill="none" xmlns="http://www.w3.org/2000/svg">
         <a href="/continent/europa" aria-label="europe">
             <g id="europe">

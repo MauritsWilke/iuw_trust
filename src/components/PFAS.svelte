@@ -55,7 +55,7 @@
 <style lang="postcss">
     svg #rotate {
         animation-name: rotate-circle;
-        animation-duration: 10s;
+        animation-duration: 15s;
         animation-timing-function: linear;
         animation-iteration-count: infinite;
         transform-origin: center;
