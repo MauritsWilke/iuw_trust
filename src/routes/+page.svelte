@@ -1,8 +1,17 @@
 <script lang="ts">
     import Pfas from "components/PFAS.svelte";
+
+    const continentMap: { [key: string]: string } = {
+        AFRICA: "afrika",
+        EUROPE: "Europa",
+        ASIA: "Azië",
+        AUSTRALIA: "Australië",
+        SOUTH_AMERICA: "Zuid-Amerika",
+        NORTH_AMERICA: "Noord-Amerika",
+    };
 </script>
 
-<div class="flex justify-center items-center w-full h-full bg-off-white">
+<div class="flex justify-center items-center w-full h-full bg-off-white max-md:hidden">
     <svg width="1483" height="899" viewBox="0 0 1483 899" fill="none" xmlns="http://www.w3.org/2000/svg">
         <a href="/continent/europa" aria-label="europe">
             <g id="europe">
@@ -342,7 +351,18 @@
 
     <p class="text-[#5B5B5B] font-serif uppercase font-bold absolute bottom-2 left-1/2 transform -translate-x-1/2">Klik op een continent</p>
 </div>
-i
+
+<div class="md:hidden w-full h-full bg-off-white overflow-scroll flex items-center flex-col gap-20 py-[80px]">
+    {#each ["AFRICA", "AUSTRALIA", "ASIA", "EUROPE", "NORTH_AMERICA", "SOUTH_AMERICA"] as continent, i}
+        {#if i > 0}
+            <hr class="border-t-[2px] border-teal w-1/2" />
+        {/if}
+        <a href="/continent/europa" aria-label="europe" class="flex flex-col gap-5">
+            <h1 class="flex justify-center font-serif uppercase font-extrabold text-teal text-[2rem]">{continentMap[continent]}</h1>
+            <img src="/continents/{continent}.svg" alt={continent} class="w-[60vw]" />
+        </a>
+    {/each}
+</div>
 
 <style lang="postcss">
     svg {

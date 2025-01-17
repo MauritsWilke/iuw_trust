@@ -1,18 +1,19 @@
 <script lang="ts">
-    let items = $state(0);
+    import type { InventoryData } from "$lib/types";
 
-    // TODO maybe add cart items here as well?
+    let inCart: InventoryData[] = $state([]);
+    let itemCount = $derived(inCart.length);
 </script>
 
 <a href="/cart">
     <div id="wrapper" class="relative cursor-pointer">
-        {#if items}
-            <div id="counter" class="absolute -top-2 -right-1 bg-[#FF4646] h-[20px] flex justify-center items-center rounded-full" style="width: {items > 9 ? 30 : 20}px">
+        {#if itemCount}
+            <div id="counter" class="absolute -top-2 -right-1 bg-[#FF4646] h-[20px] flex justify-center items-center rounded-full" style="width: {itemCount > 9 ? 30 : 20}px">
                 <p class="text-white font-bold font-serif text-[13px]" style="text-edge: cap">
-                    {#if items > 9}
+                    {#if itemCount > 9}
                         9+
                     {:else}
-                        {items}
+                        {itemCount}
                     {/if}
                 </p>
             </div>

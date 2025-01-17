@@ -1,0 +1,170 @@
+[
+    {
+        "Naam": "Titicacameer",
+        "Prijs": "€20,000,000,000.00",
+        "Land": "Bolivia; Peru",
+        "Continent": "Zuid-Amerika",
+        "Oppervlakte": "8,372",
+        "Omschrijving": "Dit hooggelegen meer is beroemd om de drijvende rieteilanden van de Uros. Het wordt omringd door Andesdorpjes met rijke culturele tradities."
+    },
+    {
+        "Naam": "Lake Pehoe",
+        "Prijs": "€1,500,000.00",
+        "Land": "Chili",
+        "Continent": "Zuid-Amerika",
+        "Oppervlakte": 22,
+        "Omschrijving": "Dit turquoise meer in Torres del Paine National Park biedt adembenemende uitzichten op bergtoppen. Het is een favoriete bestemming voor wandelaars en fotografen."
+    },
+    {
+        "Naam": "Dove Lake",
+        "Prijs": "€100,000,000.00",
+        "Land": "Australië",
+        "Continent": "Oceanië",
+        "Oppervlakte": 1,
+        "Omschrijving": "Dove Lake ligt in Tasmanië's Cradle Mountain-Lake St Clair National Park. Het biedt prachtige uitzichten op Cradle Mountain en wandelmogelijkheden in ongerepte natuur."
+    },
+    {
+        "Naam": "Wakatipumeer",
+        "Prijs": "€2,000,000,000.00",
+        "Land": "Nieuw-Zeeland",
+        "Continent": "Oceanië",
+        "Oppervlakte": 291,
+        "Omschrijving": "Dit S-vormige meer ligt in de regio Otago en biedt spectaculaire uitzichten op de omliggende bergen. Het is populair voor boottochten en avontuurlijke sporten."
+    },
+    {
+        "Naam": "Powellmeer",
+        "Prijs": "€5,000,000,000.00",
+        "Land": "Verenigde Staten van Amerika",
+        "Continent": "Noord-Amerika",
+        "Oppervlakte": 658,
+        "Omschrijving": "Dit kunstmatige meer op de grens van Arizona en Utah werd gevormd door de Glen Canyon Dam. Het is een populaire bestemming voor kajakken, varen en kamperen in een woestijnlandschap."
+    },
+    {
+        "Naam": "Maligne Lake",
+        "Prijs": "€500,000,000.00",
+        "Land": "Canada",
+        "Continent": "Noord-Amerika",
+        "Oppervlakte": 20,
+        "Omschrijving": "Gelegen in Jasper National Park, staat het bekend om het helderblauwe water en het iconische Spirit Island. Het biedt prachtige wandelroutes en boottochten in een adembenemende bergomgeving."
+    },
+    {
+        "Naam": "Crater Lake",
+        "Prijs": "€2,000,000,000.00",
+        "Land": "Verenigde Staten van Amerika",
+        "Continent": "Noord-Amerika",
+        "Oppervlakte": 53,
+        "Omschrijving": "Crater Lake, gevormd in een vulkanische caldera, is beroemd om zijn diepblauwe water. Het is het diepste meer van de VS en een trekpleister voor natuurliefhebbers."
+    },
+    {
+        "Naam": "Lake Tahoe",
+        "Prijs": "€12,000,000,000.00",
+        "Land": "Verenigde Staten van Amerika",
+        "Continent": "Noord-Amerika",
+        "Oppervlakte": 496,
+        "Omschrijving": "Dit alpenmeer in de Sierra Nevada is beroemd om zijn helder water en skigebieden. Het biedt zowel zomerse watersporten als winteractiviteiten."
+    },
+    {
+        "Naam": "Meer van Atitlán",
+        "Prijs": "€3,000,000.00",
+        "Land": "Guatemala",
+        "Continent": "Noord-Amerika",
+        "Oppervlakte": 130,
+        "Omschrijving": "Dit vulkanische meer wordt omringd door dorpen en drie imposante vulkanen. Het wordt geroemd om zijn mystieke schoonheid en culturele diversiteit."
+    },
+    {
+        "Naam": "Bovenmeer",
+        "Prijs": "€100,000,000,000.00",
+        "Land": "Verenigde Staten van Amerika",
+        "Continent": "Noord-Amerika",
+        "Oppervlakte": "82,103",
+        "Omschrijving": "Het Bovenmeer is het grootste zoetwatermeer ter wereld qua oppervlakte en een van de Grote Meren. Het biedt een ongerept landschap en is belangrijk voor de scheepvaart."
+    },
+    {
+        "Naam": "Comomeer",
+        "Prijs": "€10,000,000,000.00",
+        "Land": "Italië",
+        "Continent": "Europa",
+        "Oppervlakte": 146,
+        "Omschrijving": "Het Comomeer is een schilderachtig meer in Lombardije, omringd door bergen en charmante dorpjes. Het staat bekend om zijn luxe villa’s, waaronder die van beroemdheden, en biedt uitstekende watersportmogelijkheden."
+    },
+    {
+        "Naam": "Vierwoudstrekenmeer",
+        "Prijs": "€8,000,000,000.00",
+        "Land": "Zwitserland",
+        "Continent": "Europa",
+        "Oppervlakte": 114,
+        "Omschrijving": "Ook bekend als het Meer van Luzern, ligt dit meer te midden van schilderachtige bergen. Het is historisch belangrijk en biedt mogelijkheden voor cruises en watersport."
+    },
+    {
+        "Naam": "Derwent Water",
+        "Prijs": "€500,000,000.00",
+        "Land": "Engeland",
+        "Continent": "Europa",
+        "Oppervlakte": 5,
+        "Omschrijving": "Dit rustige meer ligt in het Lake District en wordt omringd door glooiende heuvels. Het is populair bij wandelaars en natuurliefhebbers vanwege zijn serene landschappen."
+    },
+    {
+        "Naam": "Plitvice Lakes",
+        "Prijs": "€1,000,000,000.00",
+        "Land": "Kroatië",
+        "Continent": "Europa",
+        "Oppervlakte": 2,
+        "Omschrijving": "Dit UNESCO-werelderfgoed bestaat uit zestien aaneengeschakelde meren met watervallen. Het is een van de mooiste nationale parken van Europa."
+    },
+    {
+        "Naam": "Lough Leane",
+        "Prijs": "€300,000,000.00",
+        "Land": "Ierland",
+        "Continent": "Europa",
+        "Oppervlakte": 19,
+        "Omschrijving": "Lough Leane, het grootste meer in Killarney, staat bekend om zijn groene landschappen en historische bezienswaardigheden zoals Ross Castle. Het biedt rust en een prachtig uitzicht op de omliggende heuvels."
+    },
+    {
+        "Naam": "Westelijke Meer",
+        "Prijs": "€3,000,000,000.00",
+        "Land": "China",
+        "Continent": "Azië",
+        "Oppervlakte": 7,
+        "Omschrijving": "Dit UNESCO-werelderfgoed in Hangzhou wordt geprezen om zijn serene schoonheid en klassieke Chinese tuinen. Historische tempels en bruggen maken het een geliefde bestemming voor toeristen en kunstenaars."
+    },
+    {
+        "Naam": "Lake Pichola",
+        "Prijs": "€1,000,000,000.00",
+        "Land": "India",
+        "Continent": "Azië",
+        "Oppervlakte": 7,
+        "Omschrijving": "Dit kunstmatige meer in Udaipur staat bekend om het drijvende Lake Palace en prachtige zonsondergangen. Het omliggende landschap combineert koninklijke architectuur met serene wateren."
+    },
+    {
+        "Naam": "Kawaguchimeer",
+        "Prijs": "€700,000,000.00",
+        "Land": "Japan",
+        "Continent": "Azië",
+        "Oppervlakte": 6,
+        "Omschrijving": "Dit meer biedt spectaculaire uitzichten op de iconische berg Fuji. Het is een populaire plek voor fotografie en recreatie in een serene omgeving."
+    },
+    {
+        "Naam": "Tobameer",
+        "Prijs": "€15,000,000,000.00",
+        "Land": "Indonesië",
+        "Continent": "Azië",
+        "Oppervlakte": "1,130",
+        "Omschrijving": "Dit enorme vulkanische meer ligt in Noord-Sumatra en heeft het eiland Samosir in het midden. Het is een culturele en natuurlijke schat met warme bronnen en traditionele dorpen."
+    },
+    {
+        "Naam": "Victoriameer",
+        "Prijs": "€50,000,000,000.00",
+        "Land": "Tanzania; Oeganda; Kenia",
+        "Continent": "Afrika",
+        "Oppervlakte": "68,800",
+        "Omschrijving": "Het grootste meer van Afrika strekt zich uit over Kenia, Tanzania en Oeganda. Het is een belangrijke bron van visserij en biodiversiteit in de regio."
+    },
+    {
+        "Naam": "Albertmeer",
+        "Prijs": "€10,000,000,000.00",
+        "Land": "Oeganda; Democratische Republiek Congo",
+        "Continent": "Afrika",
+        "Oppervlakte": "5,300",
+        "Omschrijving": "Dit meer ligt op de grens van Oeganda en Congo en maakt deel uit van de Nijl. Het biedt prachtige uitzichten en is een belangrijke bron van levensonderhoud voor de lokale bevolking."
+    }
+]

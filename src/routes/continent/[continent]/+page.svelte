@@ -1,4 +1,5 @@
 <script lang="ts">
+    import Product from "components/product.svelte";
     import type { PageData } from "./$types";
     let { data }: { data: PageData } = $props();
 
@@ -58,6 +59,10 @@
             {data.continent}
         </p>
     </div>
+
+    {#each data.inventory as product}
+        <Product ProductData={product}></Product>
+    {/each}
 
     <!-- <div id="waves" class="bottom-0 absolute w-screen h-auto overflow-hidden">
         <svg width="1728" height="236" viewBox="0 0 1728 236" fill="none" xmlns="http://www.w3.org/2000/svg">
