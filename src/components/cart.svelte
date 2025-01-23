@@ -1,7 +1,7 @@
 <script lang="ts">
-    import { inCart } from "$lib/cart.svelte.js";
+    import { cart } from "$lib/cart.svelte.js";
 
-    let itemCount = $derived(inCart.length);
+    let itemCount = $derived(cart.content.length);
 </script>
 
 <a href="/cart">

@@ -3,7 +3,7 @@ export type InventoryData = {
     Continent: string,
     Land: string,
     Omschrijving: string
-    Prijs: string,
+    Prijs: number,
     Oppervlakte: number,
     Volume: number
     Diepte: number,

@@ -1,12 +1,12 @@
 <script lang="ts">
-    import { inCart } from "$lib/cart.svelte";
+    import { cart } from "$lib/cart.svelte";
     import type { InventoryData } from "$lib/types";
 
     let { ProductData }: { ProductData: InventoryData } = $props();
 
     function addToCart() {
-        if (inCart.includes(ProductData.ID)) return;
-        inCart.push(ProductData.ID);
+        if (cart.content.find((v) => v.ID === ProductData.ID)) return;
+        cart.content.push(ProductData);
     }
 </script>
 
