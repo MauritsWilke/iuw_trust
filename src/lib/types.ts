@@ -1,8 +1,12 @@
 export type InventoryData = {
     Naam: string,
-    Prijs: string,
-    Land: string,
     Continent: string,
-    Oppervlakte: string,
+    Land: string,
     Omschrijving: string
+    Prijs: string,
+    Oppervlakte: number,
+    Volume: number
+    Diepte: number,
+    Temperatuur: number,
+    ID: number
 }

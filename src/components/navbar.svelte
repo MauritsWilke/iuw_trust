@@ -8,7 +8,7 @@
     });
 </script>
 
-<nav class="h-[100px] w-screen bg-primary flex items-center xl:justify-between max-xl:justify-center font-serif uppercase font-bold text-teal overflow-visible z-10">
+<nav class="h-[80px] w-screen bg-primary flex items-center xl:justify-between max-xl:justify-center font-serif uppercase font-bold text-teal overflow-visible z-10">
     <div class="max-xl:flex xl:hidden absolute left-8 w-[35px] h-[30px] cursor-pointer">
         <!-- Menu container -->
         <input class="checkbox w-full h-full z-10 opacity-0 cursor-pointer" type="checkbox" id="menu-checkbox" bind:checked />
@@ -36,8 +36,8 @@
     </div>
 
     <a href="/">
-        <div class="mt-[80px] flex items-center justify-center w-max flex-shrink-0">
-            <img src="/icons/logo.svg" alt="company logo" class="object-contain" />
+        <div class="mt-[65px] flex items-center justify-center w-max flex-shrink-0">
+            <img src="/icons/logo.svg" alt="company logo" class="object-contain w-[100px]" />
         </div>
     </a>
 
@@ -56,7 +56,7 @@
 
 <style lang="postcss">
     .adjacent {
-        @apply w-full h-full flex justify-between items-center my-[44px] mx-[80px] max-xl:hidden xl:flex;
+        @apply w-full h-full flex justify-between items-center my-11 mx-20 max-xl:hidden xl:flex;
     }
 
     .line {

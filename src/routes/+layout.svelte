@@ -9,7 +9,7 @@
     <title>Meer & Zo</title>
 </svelte:head>
 
-<div class="flex flex-col h-screen w-screen bg-off-white">
+<div class="flex flex-col h-screen w-screen bg-off-white overflow-x-hidden">
     <Navbar />
 
     <div class="flex-1 bg-gray-100 overflow-x-hidden">

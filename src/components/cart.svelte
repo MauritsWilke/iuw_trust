@@ -1,7 +1,6 @@
 <script lang="ts">
-    import type { InventoryData } from "$lib/types";
+    import { inCart } from "$lib/cart.svelte.js";
 
-    let inCart: InventoryData[] = $state([]);
     let itemCount = $derived(inCart.length);
 </script>
 
