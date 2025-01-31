@@ -96,7 +96,7 @@
                     <p>{data.product.Diepte} m</p>
                 </span>
                 <span class="icon">
-                    <img src="/icons/open_in_full.svg" alt="gemiddelde temperaturu" />
+                    <img src="/icons/{data.product.Temperatuur > 20 ? 'temp_hot' : 'temp_cold'}.svg" alt="gemiddelde temperaturu" />
                     <p>{data.product.Temperatuur} °C</p>
                 </span>
             </div>
