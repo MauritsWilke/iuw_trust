@@ -6,11 +6,12 @@
 
     function addToCart() {
         if (cart.content.find((v) => v.ID === ProductData.ID)) return;
-        cart.content.push(ProductData);
+        cart.addItem(ProductData);
     }
 </script>
 
-<div id="wrapper" class="font-serif border-red-500 border-solid border" on:click={addToCart}>
+<!-- on:click={addToCart} -->
+<a href="/product/{ProductData.ID}" id="wrapper" class="font-serif border-red-500 border-solid border">
     <h1>{ProductData.Naam}</h1>
     <p>Prijs: {ProductData.Continent}</p>
     <p>Land: {ProductData.Land}</p>
@@ -23,4 +24,4 @@
         <p>Diepte: {ProductData.Diepte}</p>
         <p>Oppervlakte: {ProductData.Oppervlakte}</p>
     </div>
-</div>
+</a>

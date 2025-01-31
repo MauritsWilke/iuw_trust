@@ -8,7 +8,7 @@
     });
 </script>
 
-<nav class="h-[80px] w-screen bg-primary flex items-center xl:justify-between max-xl:justify-center font-serif uppercase font-bold text-teal overflow-visible z-10">
+<nav class="h-[80px] w-screen bg-primary flex items-center xl:justify-between max-xl:justify-center font-serif uppercase font-bold text-teal overflow-visible z-20">
     <div class="max-xl:flex xl:hidden absolute left-8 w-[35px] h-[30px] cursor-pointer">
         <!-- Menu container -->
         <input class="checkbox w-full h-full z-10 opacity-0 cursor-pointer" type="checkbox" id="menu-checkbox" bind:checked />
@@ -25,7 +25,7 @@
             <a href="/continent/europa">Europa</a>
             <a href="/continent/afrika">Afrika</a>
             <a href="/continent/azië">Azië</a>
-            <a href="/continent/australië">Australië</a>
+            <a href="/continent/oceanië">Oceanië</a>
         </div>
     </div>
 
@@ -44,7 +44,7 @@
     <div class="adjacent">
         <a href="/continent/afrika">Afrika</a>
         <a href="/continent/azië">Azië</a>
-        <a href="/continent/australië">Australië</a>
+        <a href="/continent/oceanië">Oceanië</a>
 
         <Cart />
     </div>

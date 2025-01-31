@@ -6,7 +6,7 @@ const validContinents = [
     "afrika",
     "europa",
     "azië",
-    "australië",
+    "oceanië",
     "zuid-amerika",
     "noord-amerika",
 ]
@@ -15,7 +15,7 @@ const continentMap = {
     "afrika": "AFRICA",
     "europa": "EUROPE",
     "azië": "ASIA",
-    "australië": "AUSTRALIA",
+    "oceanië": "OCEANIA",
     "zuid-amerika": "SOUTH_AMERICA",
     "noord-amerika": "NORTH_AMERICA",
 }

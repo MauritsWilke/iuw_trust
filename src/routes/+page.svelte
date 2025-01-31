@@ -5,7 +5,7 @@
         AFRICA: "afrika",
         EUROPE: "Europa",
         ASIA: "Azië",
-        AUSTRALIA: "Australië",
+        OCEANIA: "Oceanië",
         SOUTH_AMERICA: "Zuid-Amerika",
         NORTH_AMERICA: "Noord-Amerika",
     };
@@ -150,8 +150,8 @@
             </g>
         </a>
 
-        <a href="/continent/australië" aria-label="australia">
-            <g id="australia">
+        <a href="/continent/oceanië" aria-label="oceania">
+            <g id="oceania">
                 <path
                     d="M1391.67 642.961C1389.76 642.961 1387.38 638.671 1386.9 637.241C1386.9 636.128 1386.61 633.808 1385.47 633.427C1384.04 632.95 1384.04 633.904 1383.09 633.904C1382.13 633.904 1378.8 633.904 1378.32 633.427C1377.94 633.046 1375.94 632.633 1374.98 632.474C1374.35 633.427 1372.98 635.334 1372.6 635.334C1372.12 635.334 1372.6 637.241 1372.6 638.671C1372.6 640.101 1370.22 641.531 1368.79 640.578C1367.35 639.624 1364.02 639.624 1362.59 639.624C1361.44 639.624 1361.16 638.035 1361.16 637.241V608.638C1362.11 608.32 1364.21 607.685 1364.97 607.685C1365.92 607.685 1367.83 610.068 1369.74 609.592C1371.65 609.115 1374.98 610.545 1374.98 611.498C1374.98 612.452 1378.8 615.312 1381.66 615.312C1384.52 615.312 1382.61 619.126 1383.56 621.033C1384.52 622.939 1389.76 623.416 1391.67 624.37C1393.57 625.323 1394.53 626.753 1394.53 627.707C1394.53 628.66 1389.76 627.707 1389.76 629.613C1389.76 631.52 1394.53 635.334 1396.91 637.241C1399.29 639.148 1400.25 642.008 1401.68 642.008C1403.11 642.008 1405.97 642.961 1405.97 644.391C1405.97 645.821 1405.01 645.821 1403.58 645.821C1402.15 645.821 1407.4 648.205 1405.97 648.205C1404.54 648.205 1401.2 647.728 1399.29 645.821C1397.39 643.915 1393.57 642.961 1391.67 642.961Z"
                     fill="#F4B24D"
@@ -353,7 +353,7 @@
 </div>
 
 <div class="md:hidden w-full h-full bg-off-white overflow-scroll flex items-center flex-col gap-20 py-[80px]">
-    {#each ["AFRICA", "AUSTRALIA", "ASIA", "EUROPE", "NORTH_AMERICA", "SOUTH_AMERICA"] as continent, i}
+    {#each ["AFRICA", "OCEANIA", "ASIA", "EUROPE", "NORTH_AMERICA", "SOUTH_AMERICA"] as continent, i}
         {#if i > 0}
             <hr class="border-t-[2px] border-teal w-1/2" />
         {/if}
@@ -367,18 +367,18 @@
 <style lang="postcss">
     svg {
         #asia:hover .border,
-        #australia:hover .border,
+        #oceania:hover .border,
         #africa:hover .border,
         #south-america:hover .border,
         #north-america:hover .border,
-        #australia:hover .border,
+        #oceania:hover .border,
         #europe:hover .border {
             stroke: #0d8be7;
             stroke-width: 2px;
         }
 
         #asia:hover,
-        #australia:hover,
+        #oceania:hover,
         #africa:hover,
         #south-america:hover,
         #north-america:hover,

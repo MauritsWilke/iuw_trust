@@ -28,8 +28,22 @@ class Cart {
         }
     ]);
 
+    constructor() {
+        console.log("CONSTRUCTED")
+        const storedCart = localStorage.getItem("cart");
+        if (storedCart) {
+            this.content = JSON.parse(storedCart);
+        }
+    }
+
     removeItem(ID: number) {
         this.content = this.content.filter(v => v.ID !== ID);
+        localStorage.setItem("cart", JSON.stringify(this.content));
+    }
+
+    addItem(item: InventoryData) {
+        this.content.push(item);
+        localStorage.setItem("cart", JSON.stringify(this.content));
     }
 }
 
