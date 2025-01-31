@@ -6,9 +6,13 @@ export default {
     theme: {
         extend: {
             colors: {
-                "primary": "#FABA02",
                 "teal": "#003742",
                 "off-white": "#fff6e3",
+
+                "primary": {
+                    "DEFAULT": "#FABA02",
+                    "light": "#FDC830"
+                }
             },
             fontFamily: {
                 serif: ["Inter", "serif"],

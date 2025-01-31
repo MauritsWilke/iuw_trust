@@ -42,6 +42,7 @@ class Cart {
     }
 
     addItem(item: InventoryData) {
+        if (this.content.find((v) => v.ID === item.ID)) return;
         this.content.push(item);
         localStorage.setItem("cart", JSON.stringify(this.content));
     }
