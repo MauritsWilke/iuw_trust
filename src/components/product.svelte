@@ -2,6 +2,7 @@
     import { formatPrice } from "$lib";
     import { cart } from "$lib/cart.svelte";
     import type { InventoryData } from "$lib/types";
+    import RotatingText from "./RotatingText.svelte";
 
     let { ProductData }: { ProductData: InventoryData } = $props();
 
@@ -12,7 +13,13 @@
     const fileName = (ProductData.Naam.replaceAll(" ", "") + "_").normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 </script>
 
-<a href="/product/{ProductData.ID}" id="wrapper" class="font-serif text-teal">
+<a href="/product/{ProductData.ID}" id="wrapper" class="font-serif text-teal relative">
+    {#if ProductData.ID === 6}
+        <div id="NEW" class="absolute -left-7 -top-7">
+            <RotatingText text="NIEUW NIEUW NIEUW NIEUW NIEUW" iconURL="/icons/release_alert.svg" />
+        </div>
+    {/if}
+
     <div class="rounded-[3px] h-full flex flex-col justify-between overflow-clip">
         <img src="/products/{imageFolder}/{fileName}1.jpeg" alt="" />
 
