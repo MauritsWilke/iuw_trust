@@ -21,6 +21,27 @@
     }
 </script>
 
+<svelte:head>
+    <!-- Primary Meta Tags -->
+    <title>Meer & Zo - {data.product.Naam}</title>
+    <meta name="title" content="Meer & Zo - {data.product.Naam}" />
+    <meta name="description" content={data.product.Omschrijving} />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="meerenzo.mauritswilke.com/product/{data.product.ID}" />
+    <meta property="og:title" content="Meer & Zo - {data.product.Naam}" />
+    <meta property="og:description" content={data.product.Omschrijving} />
+    <meta property="og:image" content="/products/{imageFolder}/{fileName}2.jpeg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="meerenzo.mauritswilke.com/product/{data.product.ID}" />
+    <meta property="twitter:title" content="Meer & Zo - {data.product.Naam}" />
+    <meta property="twitter:description" content={data.product.Omschrijving} />
+    <meta property="twitter:image" content="/products/{imageFolder}/{fileName}2.jpeg" />
+</svelte:head>
+
 <div id="wrapper" class="font-serif w-full h-full flex flex-row px-[70px] py-[170px] rounded-[3px]">
     <div id="images" class="w-full mr-[70px] flex gap-3 flex-col">
         <img src="/products/{imageFolder}/{fileName}1.jpeg" alt="" />
