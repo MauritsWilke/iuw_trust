@@ -5,8 +5,11 @@
     import type { PageData } from "./$types";
     let { data }: { data: PageData } = $props();
 
-    const imageFolder = data.product.Naam.toLowerCase().replaceAll(" ", "_");
-    const fileName = data.product.Naam.replaceAll(" ", "") + "_";
+    const imageFolder = data.product.Naam.toLowerCase()
+        .replaceAll(" ", "_")
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "");
+    const fileName = (data.product.Naam.replaceAll(" ", "") + "_").normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 
     const watermap = {};
 
@@ -46,7 +49,7 @@
 <div id="wrapper" class="font-serif w-full h-full flex flex-row px-[70px] py-[170px] rounded-[3px]">
     <div id="images" class="w-full mr-[70px] flex gap-3 flex-col">
         <img src="/products/{imageFolder}/{fileName}1.jpeg" alt="" />
-        <div class="w-full grid grid-cols-3 gap-3">
+        <div class="w-full grid grid-cols-3 auto-cols-min gap-3">
             <img src="/products/{imageFolder}/{fileName}2.jpeg" alt="" class="rounded-[3px]" />
             <img src="/products/{imageFolder}/{fileName}3.jpeg" alt="" class="rounded-[3px]" />
             <img src="/products/{imageFolder}/{fileName}4.jpeg" alt="" class="rounded-[3px]" />
