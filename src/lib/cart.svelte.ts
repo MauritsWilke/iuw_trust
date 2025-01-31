@@ -12,12 +12,21 @@ class Cart {
 
     removeItem(ID: number) {
         this.content = this.content.filter(v => v.ID !== ID);
-        localStorage.setItem("cart", JSON.stringify(this.content));
+        this.updateLocalStorage();
     }
 
     addItem(item: InventoryData) {
         if (this.content.find((v) => v.ID === item.ID)) return;
         this.content.push(item);
+        this.updateLocalStorage();
+    }
+
+    clear() {
+        this.content = [];
+        this.updateLocalStorage();
+    }
+
+    private updateLocalStorage() {
         localStorage.setItem("cart", JSON.stringify(this.content));
     }
 }

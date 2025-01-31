@@ -32,7 +32,7 @@
                             <p class="text-teal text-base font-extralight">{item.Continent}</p>
                         </span>
 
-                        <p class="text-teal text-xl font-light">€{item.Prijs.toLocaleString()}</p>
+                        <p class="text-teal text-xl font-light">€{formatPrice(item.Prijs)}</p>
                     </span>
                 </div>
             {/each}
@@ -72,9 +72,11 @@
                     </span>
 
                     <hr class="mt-8 border-teal h-1" />
-                    <p class="font-extralight text-base text-teal">U bestelt buiten Europa, er worden administratiekosten in rekening gebracht.</p>
+                    <p class="font-extralight text-base text-teal">In verband met nieuwe wetgeving worden er administratiekosten in rekening gebracht.</p>
 
-                    <button class="font-medium text-teal textl-xl w-full bg-primary py-5 mt-10"> Afrekenen </button>
+                    <a href="/afrekenen">
+                        <button class="font-medium text-teal text-lg w-full py-4 flex justify-center items-center rounded-[3px] bg-primary hover:bg-primary-light mt-10"> Afrekenen </button>
+                    </a>
                 </div>
             </span>
         {/if}
