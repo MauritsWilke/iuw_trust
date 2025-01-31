@@ -1,5 +1,5 @@
 <script lang="ts">
-    import Pfas from "components/PFAS.svelte";
+    import RotatingText from "components/RotatingText.svelte";
 
     const continentMap: { [key: string]: string } = {
         AFRICA: "afrika",
@@ -346,7 +346,7 @@
     </svg>
 
     <div class="absolute bottom-[15%] left-[10%]">
-        <Pfas />
+        <RotatingText text="PFAS VRIJ • PFAS VRIJ • PFAS VRIJ • " radius={45} iconSizePercentage={0.7} iconURL="/icons/water_drop.svg" />
     </div>
 
     <p class="text-[#5B5B5B] font-serif uppercase font-bold absolute bottom-2 left-1/2 transform -translate-x-1/2">Klik op een continent</p>

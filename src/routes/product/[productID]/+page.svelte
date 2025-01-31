@@ -1,8 +1,9 @@
 <script lang="ts">
     import { formatPrice } from "$lib";
     import { cart } from "$lib/cart.svelte";
+    import RotatingText from "components/RotatingText.svelte";
     import type { PageData } from "./$types";
-    let { data, originalUrl }: { data: PageData; originalUrl: string } = $props();
+    let { data }: { data: PageData } = $props();
 
     const imageFolder = data.product.Naam.toLowerCase().replaceAll(" ", "_");
     const fileName = data.product.Naam.replaceAll(" ", "") + "_";
@@ -45,14 +46,20 @@
 <div id="wrapper" class="font-serif w-full h-full flex flex-row px-[70px] py-[170px] rounded-[3px]">
     <div id="images" class="w-full mr-[70px] flex gap-3 flex-col">
         <img src="/products/{imageFolder}/{fileName}1.jpeg" alt="" />
-        <div class="flex flex-row w-full gap-3">
-            <img src="/products/{imageFolder}/{fileName}2.jpeg" alt="" class="w-full rounded-[3px]" />
-            <img src="/products/{imageFolder}/{fileName}3.jpeg" alt="" class="w-full rounded-[3px]" />
-            <img src="/products/{imageFolder}/{fileName}4.jpeg" alt="" class="w-full rounded-[3px]" />
+        <div class="w-full grid grid-cols-3 gap-3">
+            <img src="/products/{imageFolder}/{fileName}2.jpeg" alt="" class="rounded-[3px]" />
+            <img src="/products/{imageFolder}/{fileName}3.jpeg" alt="" class="rounded-[3px]" />
+            <img src="/products/{imageFolder}/{fileName}4.jpeg" alt="" class="rounded-[3px]" />
         </div>
     </div>
 
-    <div id="info" class="w-full">
+    <div id="info" class="w-full relative">
+        {#if data.product.ID === 6}
+            <div id="NEW" class="absolute right-3 -top-20">
+                <RotatingText text="NIEUW NIEUW NIEUW NIEUW NIEUW" iconURL="/icons/release_alert.svg" />
+            </div>
+        {/if}
+
         <a href="/" class="flex flex-row gap-[2px] items-center mb-5">
             <img src="/icons/arrow_left_alt.svg" alt="Terug" />
             <p class="font-medium text-base text-teal">Terug</p>
