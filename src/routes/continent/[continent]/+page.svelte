@@ -1,6 +1,7 @@
 <script lang="ts">
     import Product from "components/product.svelte";
     import type { PageData } from "./$types";
+    import Footer from "components/footer.svelte";
     let { data }: { data: PageData } = $props();
 
     type Continent = {
@@ -73,11 +74,13 @@
         </div>
     </div>
 
-    <div id="inventoryList">
+    <div id="inventoryList" class="grid grid-cols-3 gap-4 p-4 max-sm:grid-cols-1 max-lg:grid-cols-2">
         {#each data.inventory as product}
             <Product ProductData={product}></Product>
         {/each}
     </div>
+
+    <Footer></Footer>
 </div>
 
 <style lang="postcss">
@@ -85,20 +88,12 @@
         background: radial-gradient(50% 50% at 50% 50%, #fffeea 0%, #fffeea 35%, #b7e8eb 100%), #fff6e3;
 
         div p {
-            background-repeat: repeat; /* Ensure the image repeats */
-
-            /* mix-blend-mode: overlay; */
+            background-repeat: repeat;
 
             -webkit-background-clip: text;
             background-clip: text;
 
             color: transparent;
         }
-
-        /* #waves .wave {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-        } */
     }
 </style>

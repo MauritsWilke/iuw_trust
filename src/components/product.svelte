@@ -1,27 +1,38 @@
 <script lang="ts">
+    import { formatPrice } from "$lib";
     import { cart } from "$lib/cart.svelte";
     import type { InventoryData } from "$lib/types";
 
     let { ProductData }: { ProductData: InventoryData } = $props();
 
-    function addToCart() {
-        if (cart.content.find((v) => v.ID === ProductData.ID)) return;
-        cart.addItem(ProductData);
-    }
+    const imageFolder = ProductData.Naam.toLowerCase()
+        .replaceAll(" ", "_")
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "");
+    const fileName = (ProductData.Naam.replaceAll(" ", "") + "_").normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 </script>
 
-<!-- on:click={addToCart} -->
-<a href="/product/{ProductData.ID}" id="wrapper" class="font-serif border-red-500 border-solid border">
-    <h1>{ProductData.Naam}</h1>
-    <p>Prijs: {ProductData.Continent}</p>
-    <p>Land: {ProductData.Land}</p>
-    <p>Prijs: {ProductData.Prijs}</p>
-    <p class="pl-1">{ProductData.Omschrijving}</p>
+<a href="/product/{ProductData.ID}" id="wrapper" class="font-serif text-teal">
+    <div class="rounded-[3px] h-full flex flex-col justify-between overflow-clip">
+        <img src="/products/{imageFolder}/{fileName}1.jpeg" alt="" />
 
-    <div class="flex justify-between flex-row">
-        <p>Volume: {ProductData.Volume}</p>
-        <p>Temperatuur: {ProductData.Temperatuur}</p>
-        <p>Diepte: {ProductData.Diepte}</p>
-        <p>Oppervlakte: {ProductData.Oppervlakte}</p>
+        <div class="p-2 h-full flex flex-col justify-between border-x border-b border-teal">
+            <div class="flex flex-col">
+                <h1 class="font-bold text-2xl">{ProductData.Naam}</h1>
+                <p class="font-light text-sm text-opacity-60 mb-3">{formatPrice(ProductData.Prijs)}</p>
+
+                <p>{ProductData.Omschrijving}</p>
+            </div>
+
+            <button class="cart bg-primary hover:bg-primary-light h-6 mt-10">
+                <div class="">Meer info</div>
+            </button>
+        </div>
     </div>
 </a>
+
+<style lang="postcss">
+    .cart {
+        @apply font-medium text-teal text-lg px-12 py-6 flex justify-center items-center rounded-[3px] w-full;
+    }
+</style>

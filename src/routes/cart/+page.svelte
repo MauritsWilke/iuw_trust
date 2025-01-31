@@ -1,6 +1,7 @@
 <script lang="ts">
     import { formatPrice } from "$lib";
     import { cart } from "$lib/cart.svelte";
+    import Footer from "components/footer.svelte";
 
     // let { data }: { data: PageData } = $props();
     const subtotal = cart.content.map((item) => +item.Prijs).reduce((a, b) => a + b, 0);
@@ -82,6 +83,8 @@
         {/if}
     </div>
 </div>
+
+<Footer />
 
 <style lang="postcss">
     .data {

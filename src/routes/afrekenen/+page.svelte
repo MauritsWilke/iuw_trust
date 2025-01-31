@@ -1,14 +1,6 @@
 <script lang="ts">
     import { cart } from "$lib/cart.svelte";
-
-    // import { formatPrice } from "$lib";
-    // let { data }: { data: PageData } = $props();
-    // const subtotal = cart.content.map((item) => +item.Prijs).reduce((a, b) => a + b, 0);
-    // const BTW = Math.floor(0.21 * subtotal);
-    // const adminCost = cart.content.length - 0.01;
-    // const digitalAdminCost = cart.content.length * 2 - 1.01;
-
-    // const total = subtotal + BTW + adminCost + digitalAdminCost;
+    import Footer from "components/footer.svelte";
 
     const betaalmethodes = ["iDeal", "PayPal", "Mastercard", "Bitcoin"];
     let selected = $state("");
@@ -17,7 +9,15 @@
     let name = $state("");
     let canCheckout = $derived(email.length && name.length && selected.length);
 
-    function clearCart() {
+    function fakePostRequest() {
+        localStorage.setItem(
+            "userData",
+            JSON.stringify({
+                email: email,
+                name: name,
+            }),
+        );
+
         cart.clear();
     }
 </script>
@@ -56,7 +56,7 @@
 
         <div class="flex flex-col gap-2">
             <a href="/succes">
-                <button class="cart bg-primary hover:bg-primary-light h-6 mt-10" onclick={clearCart} disabled={!canCheckout}>
+                <button onclick={fakePostRequest} disabled={!canCheckout} style="background-color: #{canCheckout ? 'faba02' : 'DFA602'}" class="cart bg-primary hover:bg-primary-light h-6 mt-10">
                     <div class="">Bestellen en betalen</div>
                 </button>
             </a>
@@ -73,6 +73,7 @@
         </a>
     </div>
 </div>
+<Footer />
 
 <style lang="postcss">
     .header {

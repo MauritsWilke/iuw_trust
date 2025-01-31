@@ -1,4 +1,8 @@
-<div id="wrapper" class="w-full h-full font-serif px-[70px] py-[80px] max-w-[75ch]">
+<script>
+    import Footer from "components/footer.svelte";
+</script>
+
+<div id="wrapper" class=" font-serif px-[70px] py-[80px] max-w-[75ch] text-teal">
     <h1>Privacy- en Veiligheidsverklaring</h1>
 
     <h2>1. Inleiding</h2>
@@ -39,7 +43,7 @@
 
     <h2>6. Contactgegevens</h2>
     <p>Bij vragen over deze verklaring of uw privacyrechten kunt u contact met ons opnemen via:</p>
-    <span class="pb-2">
+    <span>
         <pre>📧&#x09;info@meerenzo.nl</pre>
         <pre>📍&#x09;Meer & Zo B.V.</pre>
         <pre>&#x09;&#x09;Waterstraat 12</pre>
@@ -48,6 +52,8 @@
         <pre>📞 +31 20 123 456</pre>
     </span>
 </div>
+
+<Footer />
 
 <style lang="postcss">
     h1 {

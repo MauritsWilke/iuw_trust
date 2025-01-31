@@ -10,3 +10,8 @@ export type InventoryData = {
     Temperatuur: number,
     ID: number
 }
+
+export type UserData = {
+    name: string,
+    email: string,
+}

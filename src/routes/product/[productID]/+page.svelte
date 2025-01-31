@@ -3,6 +3,7 @@
     import { cart } from "$lib/cart.svelte";
     import RotatingText from "components/RotatingText.svelte";
     import type { PageData } from "./$types";
+    import Footer from "components/footer.svelte";
     let { data }: { data: PageData } = $props();
 
     const imageFolder = data.product.Naam.toLowerCase()
@@ -126,6 +127,8 @@
         </div>
     </div>
 </div>
+
+<Footer />
 
 <style lang="postcss">
     .cart {
