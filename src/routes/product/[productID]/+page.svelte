@@ -32,14 +32,14 @@
     <meta property="og:url" content="meerenzo.mauritswilke.com/product/{data.product.ID}" />
     <meta property="og:title" content="Meer & Zo - {data.product.Naam}" />
     <meta property="og:description" content={data.product.Omschrijving} />
-    <meta property="og:image" content="/products/{imageFolder}/{fileName}2.jpeg" />
+    <meta property="og:image" content="/products/{imageFolder}/{fileName}1.jpeg" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="meerenzo.mauritswilke.com/product/{data.product.ID}" />
     <meta property="twitter:title" content="Meer & Zo - {data.product.Naam}" />
     <meta property="twitter:description" content={data.product.Omschrijving} />
-    <meta property="twitter:image" content="/products/{imageFolder}/{fileName}2.jpeg" />
+    <meta property="twitter:image" content="/products/{imageFolder}/{fileName}1.jpeg" />
 </svelte:head>
 
 <div id="wrapper" class="font-serif w-full h-full flex flex-row px-[70px] py-[170px] rounded-[3px]">
