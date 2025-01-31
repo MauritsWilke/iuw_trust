@@ -1,7 +1,3 @@
-<script>
-    import Footer from "components/footer.svelte";
-</script>
-
 <div id="wrapper" class="w-full h-full font-serif px-[70px] py-[80px] max-w-[75ch]">
     <h1>Privacy- en Veiligheidsverklaring</h1>
 

@@ -11,7 +11,11 @@
         .replace(/[\u0300-\u036f]/g, "");
     const fileName = (data.product.Naam.replaceAll(" ", "") + "_").normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 
-    const watermap = {};
+    const waterMap: [number, string][] = [
+        [360, "high"],
+        [50, "medium"],
+        [0, "low"],
+    ];
 
     let isInCart = $derived(cart.content.find((v) => v.ID === data.product.ID));
 
@@ -48,7 +52,7 @@
 
 <div id="wrapper" class="font-serif w-full h-full flex flex-row px-[70px] py-[170px] rounded-[3px]">
     <div id="images" class="w-full mr-[70px] flex gap-3 flex-col">
-        <img src="/products/{imageFolder}/{fileName}1.jpeg" alt="" />
+        <img src="/products/{imageFolder}/{fileName}1.jpeg" alt="" class="rounded-[3px]" />
         <div class="w-full grid grid-cols-3 auto-cols-min gap-3">
             <img src="/products/{imageFolder}/{fileName}2.jpeg" alt="" class="rounded-[3px]" />
             <img src="/products/{imageFolder}/{fileName}3.jpeg" alt="" class="rounded-[3px]" />
@@ -80,7 +84,7 @@
                     <div class="border-teal border rounded-b-full"></div>
                     <div class="flex flex-col">
                         <p class="text-teal opacity-70">Vraagprijs</p>
-                        <p class="text-lg text-teal">{formatPrice(data.product.Prijs)}</p>
+                        <p class="text-lg text-teal">€{formatPrice(data.product.Prijs)}</p>
                     </div>
                 </div>
             </div>
@@ -91,7 +95,7 @@
                     <p>{data.product.Oppervlakte} km²</p>
                 </span>
                 <span class="icon">
-                    <img src="/icons/water_medium.svg" alt="volume" />
+                    <img src="/icons/water_{waterMap.find((v) => v[0] <= data.product.Volume)![1]}.svg" alt="volume" />
                     <p>{data.product.Volume} km³</p>
                 </span>
                 <span class="icon">

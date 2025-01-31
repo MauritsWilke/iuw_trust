@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { formatPrice } from "$lib";
     import { cart } from "$lib/cart.svelte";
 
     // let { data }: { data: PageData } = $props();
@@ -51,23 +52,23 @@
                 <div id="info" class="flex flex-col border border-teal rounded-[3px] px-6 py-8">
                     <span class="data">
                         <p>Subtotaal:</p>
-                        <p>€{subtotal.toLocaleString()}</p>
+                        <p>€{formatPrice(subtotal)}</p>
                     </span>
                     <span class="data">
                         <p>BTW:</p>
-                        <p>€{BTW.toLocaleString()}</p>
+                        <p>€{formatPrice(BTW)}</p>
                     </span>
                     <span class="data">
                         <p>Administratiekosten:</p>
-                        <p>€{adminCost.toLocaleString()}</p>
+                        <p>€{formatPrice(adminCost)}</p>
                     </span>
                     <span class="data">
                         <p>Digitale administratiekosten:</p>
-                        <p>€{digitalAdminCost.toLocaleString()}</p>
+                        <p>€{formatPrice(digitalAdminCost)}</p>
                     </span>
                     <span class="text-teal text-lg font-medium flex justify-between">
                         <p>Totaal:</p>
-                        <p>€{total.toLocaleString()}</p>
+                        <p>€{formatPrice(total)}</p>
                     </span>
 
                     <hr class="mt-8 border-teal h-1" />

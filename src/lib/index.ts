@@ -1,7 +1,13 @@
 export function formatPrice(price: number) {
-    // 20.000.000.000,-
+    const formatted = new Intl.NumberFormat('nl-NL', { style: "currency", currency: "EUR" }).format(
+        price
+    ).slice(2)
+        .replace(",00", ",-")
+
     const suffix = ",-"
     const locale = price.toLocaleString().replaceAll(",", ".");
 
-    return locale + suffix;
+    // console.log(formatted)
+
+    return formatted;
 }
