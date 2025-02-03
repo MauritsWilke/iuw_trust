@@ -12,7 +12,7 @@
     const total = subtotal + BTW + adminCost + digitalAdminCost;
 </script>
 
-<div id="wrapper" class="w-full flex flex-row font-serif px-[70px] pt-[170px]">
+<div id="wrapper" class="w-full h-full flex flex-row font-serif px-[70px] pt-[170px]">
     <div id="winkelwagen" class="w-full mr-[70px]">
         <h1 class="header pb-2">Winkelwagen</h1>
 
